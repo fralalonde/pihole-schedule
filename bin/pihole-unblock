@@ -1,4 +1,8 @@
-BIN_DIR=$(cd `dirname $(dirname $0)` && pwd)
-DOMAINS=$(<$BIN_DIR/../lists/$1)
+#!/bin/bash
 
-pihole --wild -d $DOMAINS
+BIN_DIR=$(dirname "$(realpath $0)")
+
+set -- $(<$BIN_DIR/../lists/$1)
+echo "Unblocking $@"
+
+pihole --wild -d $@

@@ -1,4 +1,6 @@
-BIN_DIR=$(cd `dirname $(dirname $0)` && pwd)
+#!/bin/bash
+
+BIN_DIR=$(dirname "$(realpath $0)")
 DOMAINS=$(<$BIN_DIR/../lists/$1)
 
 pihole --wild $DOMAINS

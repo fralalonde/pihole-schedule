@@ -1,0 +1,6 @@
+[Unit]
+Description=End DNS curfew
+[Timer]
+OnCalendar=*-*-* 06:00:00
+[Install]
+WantedBy=timers.target

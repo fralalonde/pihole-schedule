@@ -1,0 +1,4 @@
+[Unit]
+Description=pihole curfew start
+[Service]
+ExecStart=pihole-block curfew

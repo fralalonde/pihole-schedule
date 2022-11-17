@@ -1,0 +1,4 @@
+[Unit]
+Description=pihole curfew stop
+[Service]
+ExecStart=pihole-unblock curfew

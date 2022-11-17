@@ -2,13 +2,21 @@
 # 0-59      0-23    1-31    1-12     0-7 (0 and 7 are both sunday)
 
 # block instagram monday 5am - friday 5pm
-*  5 * * 1 pihole-block instagram
-* 17 * * 5 pihole-unblock instagram
+#*  5 * * 1 pihole-block instagram
+#* 17 * * 5 pihole-unblock instagram
 
 # block twitter 10pm - 5pm everyday
-* 22 * * * pihole-block twitter
-*  5 * * * pihole-unblock twitter
+#* 22 * * * pihole-block twitter
+#*  5 * * * pihole-unblock twitter
 
 # block slack friday 5pm - sunday 5pm
-* 17 * * 5 pihole-block slack
-* 17 * * 0 pihole-unblock slack
+#* 17 * * 5 pihole-block slack
+#* 17 * * 0 pihole-unblock slack
+
+# block youtube friday 5pm - sunday 5pm
+40 10 * * * pihole-block youtube
+45 10 * * * pihole-unblock youtube
+
+# block youtube friday 5pm - sunday 5pm
+42 10 * * * pihole-block reddit
+44 10 * * * pihole-unblock reddit
